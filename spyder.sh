@@ -317,7 +317,7 @@ sleep 2
     echo ${BlueF}[${GreenF}✔${BlueF}]${white} arno0x0x meterpreter loader random bytes stager: active ..${Reset}
     sleep 2
   
-fi
+
 clear
 
 
