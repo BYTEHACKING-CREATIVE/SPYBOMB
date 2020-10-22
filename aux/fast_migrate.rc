@@ -1,0 +1,5 @@
+sysinfo
+getprivs
+getsystem
+run migrate -n wininit.exe
+getuid
