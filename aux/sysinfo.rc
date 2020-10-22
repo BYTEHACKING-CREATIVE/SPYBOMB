@@ -1,0 +1,5 @@
+sysinfo
+getuid
+getlwd
+netstat -atnp
+ls
