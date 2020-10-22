@@ -1,0 +1,132 @@
+##############################################################################
+#                                                                            #
+#    The following config file will allow you to customize settings within   #
+#    spyder tool, The lines that Do not have comment code ("#") are the       #
+#    fields you want to toy with. There are additional options, read the     #
+#    comments For additional config settings.                                #
+#                                                                            #
+#    CHANGING THIS SETTINGS WILL AFFECT 'spyder.sh' WAY OF WORKING           #
+#                                                                            #
+##############################################################################
+
+
+
+### Wine and mingw-gcc - Local system arch (32-bit/64-bit)
+# This next setting forces the main tool (spyder.sh) to use WINE
+# and MINGW-GCC command syntax based on the arch sellected bellow.
+# SYNTAX: wine OR wine64 | i586-mingw32msvc-gcc OR i686-w64-mingw32-gcc
+---------------
+SYSTEM_ARCH=x86
+---------------
+
+
+
+### msf postgresql database connection check ? (msfdb reinit)
+# This next setting allow users to check msf postgresql
+# connection status and rebuild msfdb if not connected.
+# values accepted are: OFF or ON
+---------------
+MSF_REBUILD=OFF
+---------------
+
+
+
+### Build logfiles using metasploit ? (spool core command)
+# This next setting allow users to record session outputs
+# from msfconsole (handler) into spyder-main/output folder.
+# values accepted are: OFF or ON
+----------------
+MSF_LOGFILES=OFF
+----------------
+
+
+
+### This function allow users to obfuscate the droppers build
+# by spyder. And in 'amsi evasion' modules it will trigger dropper
+# Persistence, Obfuscation or Silent Executions using vbs scripts.
+---------------
+OBFUSCATION=OFF
+---------------
+
+
+
+### Update metasploit framework ? (msfupdate)
+# This next setting allow users to upgrade your metasploit
+# database with recent msf releases. (at script startup).
+# values accepted are: OFF or ON
+--------------
+MSF_UPDATE=OFF
+--------------
+
+
+
+### apache2 webroot installation full path.
+# This next config its needed to be able to upload
+# our builds into target machine (apache2 - malicious url).
+----------------------------
+APACHE_WEBROOT=/var/www/html
+----------------------------
+
+
+
+### Wine drive_c install absoluct path
+# This next setting allow users to input
+# the absoluct path of wine install.
+-------------------------------
+WINE_DRIVEC=/root/.wine/drive_c
+-------------------------------
+
+
+
+### Metasploit modules (auxiliarys) directory structure.
+# This next setting allow users to input the full path
+# where to copy spyder toolkit msf_auxiliary_modules.
+--------------------------------------------------------
+POST_EXPLOIT_DIR=/usr/share/metasploit-framework/modules
+--------------------------------------------------------
+
+
+
+### arno0x0x meterpreter_loader random stager bytes av bypass technic ..
+# This setting forces spyder toolkit at startup to backup/replace the  msf meterpreter_loader.rb (x86)
+# and is counterpart (x86), rebuild msf database (msfdb) and reload spyder meterpreter_loaders into msf.
+# The new loaders will add an arbitrary number of random bytes at the beginning of the stage being sent
+# back to the stager in an attempt to evade AV signature detection and run time detection.
+#
+# HINT: This option will only be available in windows/meterpreter loaders
+# HINT: the msf modules will be reverted to default at spyder exit ..
+# values accepted are: OFF or ON
+-----------------------
+RANDOM_STAGER_BYTES=OFF
+METERPRETER_STAGER=/usr/share/metasploit-framework/lib/msf/core/payload/windows
+-----------------------
+
+
+
+### Pyinstaller and Python versions (under WINE)
+# setup.sh only installs Python26 (python-2.6.6.msi)
+# pyinstaller-2.0 and pywin32-220 versions (32bit/64bit) ..
+#
+# HINT: If you have manually installed other versions of
+# this softwares, then we can use the follow settings to
+# force the main tool (spyder.sh) to use them at working.
+-----------------------------------
+PYTHON_VERSION=Python26
+PYINSTALLER_VERSION=pyinstaller-2.0
+-----------------------------------
+
+
+
+########################################################################################
+# WARNING: DONT CHANGE THE FOLLOW SETTINGS - SETUP.SH WILL AUTO-CONFIG THIS SETTINGS   #
+# WARNING: spyder.sh main tool depends of this follow configurations to proper work ..  #
+########################################################################################
+--------------------
+MEGAUPLOAD_DOMAIN=NO
+--------------------
+ARP_SETTINGS=IPv4
+ETTER_DNS_PATH=/etc/ettercap/etter.dns
+
+
+
+_EOF
