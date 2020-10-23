@@ -218,7 +218,7 @@ echo ${BlueF} && clear && cat << !
                    |  |                    | |         |  |          |         \ 
             _______|  |           _________| |_________|  |_________ |          \
 !
-echo "${RedF}     Shellcode/Rat_Generator${white}::${RedF}CodeName${white}::${RedF}$C0d3${white}::${RedF}SSA(redteam @2020)${BlueF}"
+echo "${RedF}     Shellcode/Rat_Generator${white}::${RedF}CodeName${white}::${RedF}$C0d3${white}::${RedF}SSA(ByteHacking@2020)${BlueF}"
 echo "    ╔════════════════════════════════════════════════════════════════╗"
 echo "    ║  ${YellowF}The main goal of this tool its not to build 'FUD' payloads!${BlueF}   ║"
 echo "    ║  ${YellowF}But to give to its users the first glance of how shellcode is${BlueF} ║"
@@ -14402,7 +14402,7 @@ e|E) sh_exit ;;
 esac
 }
 
-
+#copyright at byte hacking
 
 
 # -----------------------------
