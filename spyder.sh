@@ -210,14 +210,15 @@ clear
 #                  - CodeName: $C0d3 -
 echo ${BlueF} && clear && cat << !
                               
-                          ░██████╗██████╗░██╗░░░██╗
-                          ██╔════╝██╔══██╗╚██╗░██╔╝
-                          ╚█████╗░██████╔╝░╚████╔╝░
-                          ░╚═══██╗██╔═══╝░░░╚██╔╝░░
-                          ██████╔╝██║░░░░░░░░██║░░░
-                          ╚═════╝░╚═╝░░░░░░░░╚═╝░░░         
+            ________  ___________             _________   __________ __________ 
+            |         |         | |        | |         |  |          |        |
+            |         |         | |        | |         |  |          |        |
+            |_______  |_________| |        | |         |  |_________ |________|        
+                   |  |           |________| |         |  |          |        \  
+                   |  |                    | |         |  |          |         \ 
+            _______|  |           _________| |_________|  |_________ |          \
 !
-echo "${RedF}     Shellcode/Rat_Generator${white}::${RedF}CodeName${white}::${RedF}$C0d3${white}::${RedF}SSA(ByteHacking@2020)${BlueF}"
+echo "${RedF}     Shellcode/Rat_Generator${white}::${RedF}CodeName${white}::${RedF}$C0d3${white}::${RedF}SSA(redteam @2020)${BlueF}"
 echo "    ╔════════════════════════════════════════════════════════════════╗"
 echo "    ║  ${YellowF}The main goal of this tool its not to build 'FUD' payloads!${BlueF}   ║"
 echo "    ║  ${YellowF}But to give to its users the first glance of how shellcode is${BlueF} ║"
@@ -14416,13 +14417,13 @@ while :
 do
 clear && echo ${BlueF}
 cat << !
-                
-              ░██████╗██████╗░██╗░░░██╗
-              ██╔════╝██╔══██╗╚██╗░██╔╝
-              ╚█████╗░██████╔╝░╚████╔╝░
-              ░╚═══██╗██╔═══╝░░░╚██╔╝░░
-              ██████╔╝██║░░░░░░░░██║░░░
-              ╚═════╝░╚═╝░░░░░░░░╚═╝░░░ V$ver
+          
+                          ░██████╗██████╗░██╗░░░██╗
+                          ██╔════╝██╔══██╗╚██╗░██╔╝
+                          ╚█████╗░██████╔╝░╚████╔╝░
+                          ░╚═══██╗██╔═══╝░░░╚██╔╝░░
+                          ██████╔╝██║░░░░░░░░██║░░░
+                          ╚═════╝░╚═╝░░░░░░░░╚═╝░░░  V$ver
 !
 echo "       ${BlueF}USER:${YellowF}$user ${BlueF}ENV:${YellowF}$EnV ${BlueF}INTERFACE:${YellowF}$InT3R ${BlueF}ARCH:${YellowF}$ArCh ${BlueF}DISTRO:${YellowF}$DiStR0"${BlueF}
 cat << !
